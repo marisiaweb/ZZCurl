@@ -17,7 +17,10 @@ class Post
 	public function send()
 	{
 		$response = \GuzzleHttp\post($this->url, ['body' => $this->data]);
-		return $response;
+		$code = $response->getStatusCode();
+		if($code == 200)
+			return true;
+		return false;
 	}
 	
 }
