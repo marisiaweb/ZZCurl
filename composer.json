@@ -1,0 +1,19 @@
+{
+    "name": "opensourcediva/zzcurl",
+    "description": "Allows you to easily send post data.",
+    "authors": [
+        {
+            "name": "Marisia",
+            "email": "marisia@webomg.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "~4.0"
+    }, 
+    "autoload": {
+    	"psr-4": {
+    		"Utility\\": "src/Utility"
+    	}
+    }
+}
