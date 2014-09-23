@@ -29,7 +29,7 @@ class Post
 	
 		if($sResp['http_code'] == 200)
 			return true;
-		return false;
+		return $sResp;
 	}
 	
 }
