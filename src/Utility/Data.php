@@ -17,7 +17,6 @@ class Data
 		'Browser'		=> "Browser is missing",
 		'providerID'	=> "Provider Id is missing",
 		'omg_referer' =>  "Referral is missing",
-		//'movesize'		=> "$moving_home_size",
 		'weight'		=> "Weight is missing",
 		'source'		=> "Source missing",
 		'firstname'		=> "First Name is missing",
@@ -27,10 +26,10 @@ class Data
 		'ozip'			=> "Origin zip is missing",
 		'ostate'		=> "Origin state is missing",
 		'ocity'			=> "Origin city is missing",
-		'dzip'			=> "Destination zip is missing",
+		// 'dzip'			=> "Destination zip is missing",
 		'dstate'		=> "Destination state is missing",
 		'dcity'			=> "Destination city is missing",
-		'movesize'		=> "Move size is missing",
+		// 'movesize'		=> "Move size is missing",
 		'movedte' 		=> "Move date is missing"
 		);
 	
