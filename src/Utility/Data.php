@@ -35,7 +35,7 @@ class Data
 	
 		foreach($this->data as $key => $val){		
 			if(empty($val))
-			$resp[] = "Error: ".$requesedData[$key];
+			$resp[] = $key."  Error: ".$requesedData[$key];
 		}
 		if(empty($resp))
 			return 1;		
