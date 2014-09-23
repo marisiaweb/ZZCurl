@@ -17,7 +17,7 @@ class Data
 		'Browser'		=> "Browser is missing",
 		'providerID'	=> "Provider Id is missing",
 		'omg_referer' =>  "Referral is missing",
-		'weight'		=> "Weight is missing",
+		//'weight'		=> "Weight is missing",
 		'source'		=> "Source missing",
 		'firstname'		=> "First Name is missing",
 		'lastname'		=> "Last Name is missing",
