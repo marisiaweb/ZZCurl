@@ -26,7 +26,7 @@ class Data
 		'ozip'			=> "Origin zip is missing",
 		'ostate'		=> "Origin state is missing",
 		'ocity'			=> "Origin city is missing",
-		// 'dzip'			=> "Destination zip is missing",
+		'dzip'			=> "Destination zip is missing",
 		'dstate'		=> "Destination state is missing",
 		'dcity'			=> "Destination city is missing",
 		// 'movesize'		=> "Move size is missing",
