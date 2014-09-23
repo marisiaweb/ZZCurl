@@ -17,7 +17,6 @@ class Data
 		'Browser'		=> "Browser is missing",
 		'providerID'	=> "Provider Id is missing",
 		'omg_referer' =>  "Referral is missing",
-		//'weight'		=> "Weight is missing",
 		'source'		=> "Source missing",
 		'firstname'		=> "First Name is missing",
 		'lastname'		=> "Last Name is missing",
@@ -29,12 +28,11 @@ class Data
 		'dzip'			=> "Destination zip is missing",
 		'dstate'		=> "Destination state is missing",
 		'dcity'			=> "Destination city is missing",
-		// 'movesize'		=> "Move size is missing",
 		'movedte' 		=> "Move date is missing"
 		);
 	
 		foreach($this->data as $key => $val){		
-			if(empty($val))
+			if(isset($requesedData[$key]) && empty($val))
 			$resp[] = $key."  Error: ".$requesedData[$key];
 		}
 		if(empty($resp))
