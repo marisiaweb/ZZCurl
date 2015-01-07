@@ -3,7 +3,7 @@
 Allows you to easily send post data.
 
 ### Example
-``php
+```php
 
 <?php 
 
@@ -17,4 +17,4 @@ $sender = new Utility\Post('URL Here');
 $sender->setData($data);
 $sender->send();
 
-``
+```
