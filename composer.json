@@ -12,5 +12,8 @@
     	"psr-4": {
     		"Utility\\": "src/Utility"
     	}
+    },
+    "require-dev": {
+        "phpspec/phpspec": "2.1.1"
     }
 }

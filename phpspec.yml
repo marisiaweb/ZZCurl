@@ -1,0 +1,4 @@
+suites:
+  zzcurl_suite:
+    src: src
+    namespace: Utility
