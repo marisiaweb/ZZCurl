@@ -33,8 +33,7 @@ class Post
 
         $info = curl_getinfo($ch);
 
-        if ($this->isNotValidResponseCode($info))
-            throw new Exception('Invalid curl response. Response code: ' . $info['http_code']);
+        $this->guardAgainstInvalidResponseCode($info);
 
         return true;
     }
@@ -54,6 +53,12 @@ class Post
         if (curl_errno($ch)) {
             throw new Exception('Problem with curl request.');
         }
+    }
+
+    private function guardAgainstInvalidResponseCode($info)
+    {
+        if ($this->isNotValidResponseCode($info))
+            throw new Exception('Invalid curl response. Response code: ' . $info['http_code']);
     }
 
 }
