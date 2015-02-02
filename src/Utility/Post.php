@@ -27,9 +27,14 @@ class Post
 			curl_setopt($ch, CURLOPT_MAXCONNECTS, true);	
 			$sResp = curl_exec($ch);
 	
-		if($sResp['http_code'] == 200)
+		if($this->isValidResponseCode($sResp))
 			return true;
 		return $sResp;
 	}
-	
+
+	private function isValidResponseCode($sResp)
+	{
+		return $sResp['http_code'] == 200;
+	}
+
 }
